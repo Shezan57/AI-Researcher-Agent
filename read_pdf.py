@@ -2,7 +2,7 @@ from langchain_core.tools import tool
 import io
 import PyPDF2
 import requests
-url="http://arxiv.org/pdf/2508.14042v1"
+# url="http://arxiv.org/pdf/2508.14042v1"
 
 
 
@@ -36,4 +36,4 @@ def read_pdf(url: str) -> str:
         print(f"Error reading PDF from {url}: {e}")
         raise
 
-print(read_pdf(url))  # Example usage, replace with your URL
+# print(read_pdf(url))  # Example usage, replace with your URL
